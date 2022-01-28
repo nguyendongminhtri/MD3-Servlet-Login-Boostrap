@@ -17,7 +17,7 @@ public class ConnectMySQL {
     public static final String PASSWORD = "e67a119e";
 
     public static Connection getConnect(){
-        if (connection==null){
+
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 connection = DriverManager.getConnection(
@@ -30,7 +30,7 @@ public class ConnectMySQL {
                 System.out.println("ket noi khong thanh cong");
                 e.printStackTrace();
             }
-        }
+
 
         return  connection;
     }
